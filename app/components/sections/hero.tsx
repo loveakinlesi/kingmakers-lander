@@ -1,6 +1,7 @@
+import { useGSAP } from "@gsap/react";
 import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
-import { useEffect, useRef } from "react";
+import ScrollTrigger from "gsap/dist/ScrollTrigger";
+import { useRef } from "react";
 import { Link } from "react-router";
 import { Button } from "../ui/button";
 
@@ -10,7 +11,7 @@ export default function Hero() {
   const sectionRef = useRef<HTMLDivElement | null>(null);
   const imgRef = useRef<HTMLImageElement | null>(null);
 
-  useEffect(() => {
+  useGSAP(() => {
     const ctx = gsap.context(() => {
       if (imgRef.current && !imgRef.current.complete) {
         imgRef.current.addEventListener("load", () => ScrollTrigger.refresh(), { once: true });
