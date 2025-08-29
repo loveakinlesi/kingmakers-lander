@@ -2,6 +2,7 @@ import { useEffect, useState, useRef } from "react";
 import { Link } from "react-router";
 import { cn } from "~/lib/utils";
 import { Button } from "../ui/button";
+import { Logo } from "../ui/logo";
 
 const navItems = [
   { name: "About Us", link: "#about" },
@@ -57,9 +58,9 @@ export default function Navbar() {
               : "border-b border-[#ebebf0] backdrop-blur-2xl bg-white/75 text-foreground"
         )}
       >
-        <div className="flex items-center justify-between px-5 md:px-0 mx-auto w-full max-w-250 h-full">
+        <div className="flex items-center justify-between px-5 lg:px-0 mx-auto w-full max-w-250 h-full">
           <Link to="/" className="font-bold text-2xl" onClick={handleNavClick}>
-            Kingmakers
+           <Logo size={24}/>
           </Link>
 
           {/* Desktop nav */}

@@ -27,7 +27,7 @@ export default function FooterSection() {
                             aria-label="go home">
                             {/* <LogoIcon /> */}
                         </Link>
-                        <span className="text-background block text-center text-sm">© {new Date().getFullYear()} Kingmakers, All rights reserved</span>
+                        <span className="text-background block text-center text-sm">&copy;{new Date().getFullYear()} Accelra Group, All rights reserved</span>
                     </div>
 
                     <div className="order-first flex flex-wrap gap-x-6 gap-y-4 md:order-last">

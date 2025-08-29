@@ -3,7 +3,7 @@ import { Welcome } from "../welcome/welcome";
 
 export function meta({}: Route.MetaArgs) {
   return [
-    { title: "Kingmakers" },
+    { title: "Accelra Group" },
     { name: "description", content: "We Don't Just Back Winners. We Make Kings." },
   ];
 }
