@@ -1,13 +1,13 @@
 import { useEffect, useState, useRef } from "react";
 import { Link } from "react-router";
 import { cn } from "~/lib/utils";
-import { Button } from "./ui/button";
+import { Button } from "../ui/button";
 
 const navItems = [
   { name: "About Us", link: "#about" },
   { name: "Our Philosophy", link: "#philosophy" },
-  { name: "Portfolio", link: "#portfolio" },
-  { name: "Team", link: "#team" },
+  // { name: "Portfolio", link: "#portfolio" },
+  // { name: "Team", link: "#team" },
 ];
 
 export default function Navbar() {

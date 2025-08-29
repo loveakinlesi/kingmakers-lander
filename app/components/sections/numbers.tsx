@@ -30,7 +30,7 @@ export default function Numbers() {
                     numbers.map((number, index) => {
                         return (
                             <li key={index} className="flex flex-col gap-2 p-6 bg-[#f7f7f7] min-h-0 rounded-[20px]">
-                                <h2 className="text-2xl font-fg whitespace-pre-line font-semibold font-fg">{number.value}</h2>
+                                <h2 className="text-4xl font-fg whitespace-pre-line font-bold font-fg">{number.value}</h2>
                                 <p className="text-base opacity-65">{number.title}</p>
                             </li>
                         )
