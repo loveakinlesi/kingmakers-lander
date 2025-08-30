@@ -12,7 +12,7 @@ const scrollToAnchor = (anchor: string) => {
 // @ts-ignore
 export const Link = (props: RemixLinkProps) => {
     const isInternal = typeof props.to === "string" && props.to.startsWith("#");
-    console.log("🚀 ~ Link ~ isInternal:", isInternal,props.to);
+    // console.log("🚀 ~ Link ~ isInternal:", isInternal,props.to);
     if (isInternal) {
         <span {...props} onClick={()=>scrollToAnchor(props.to.toString())} />
     }
