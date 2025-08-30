@@ -4,7 +4,7 @@ const members = [
     {
         name: 'Tosin Lawuyi',
         role: 'Partner',
-        avatar: 'https://media.licdn.com/dms/image/v2/D4E03AQG3enRxoZuEng/profile-displayphoto-crop_800_800/B4EZgHgowcHEAI-/0/1752472653337?e=1759363200&v=beta&t=S5UJyVAfj6N970h7WN8IG4kaG-rn0ZJTiFScSnw8Ycg',
+        avatar: 'tl.jpeg',
         link: '#',
     },
     {
