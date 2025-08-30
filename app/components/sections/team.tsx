@@ -10,7 +10,7 @@ const members = [
     {
         name: 'Love Akinlesi',
         role: 'Partner',
-        avatar: 'https://media.licdn.com/dms/image/v2/D4D03AQFqy4LKhzKp0Q/profile-displayphoto-shrink_200_200/B4DZdXCjUsHwAY-/0/1749511977026?e=1759363200&v=beta&t=Cq7dfoT31cAK0xEnN191ePf5H0gf9AV8SiwSKFpsgOY',
+        avatar: 'love.jpeg',
         link: '#',
     },
     {
@@ -54,12 +54,12 @@ export default function TeamSection() {
                                     </div>
                                     <div className="mt-1 flex items-center justify-between">
                                         <span className="text-muted-foreground inline-block translate-y-6 text-sm opacity-0 transition duration-300 group-hover:translate-y-0 group-hover:opacity-100">{member.role}</span>
-                                        <Link
+                                        {/* <Link
                                             to={member.link}
                                             className="group-hover:text-primary-600 dark:group-hover:text-primary-400 inline-block translate-y-8 text-sm tracking-wide opacity-0 transition-all duration-500 hover:underline group-hover:translate-y-0 group-hover:opacity-100">
                                             {' '}
                                             Linktree
-                                        </Link>
+                                        </Link> */}
                                     </div>
                                 </div>
                             </div>
