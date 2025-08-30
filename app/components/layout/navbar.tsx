@@ -1,8 +1,8 @@
 import { useEffect, useState, useRef } from "react";
-import { Link } from "react-router";
 import { cn } from "~/lib/utils";
 import { Button } from "../ui/button";
 import { Logo } from "../ui/logo";
+import { Link } from "../ui/link";
 
 const navItems = [
   { name: "About Us", link: "#about" },

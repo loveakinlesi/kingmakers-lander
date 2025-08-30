@@ -53,9 +53,9 @@ export default function Portfolio() {
       <div className="relative text-start lg:py-22 gap-10 lg:gap-16 section grid items-start grid-rows-[initial] lg:grid-cols-[450px_488px]" style={{ gridTemplateAreas: "content media" }}>
 
         <div className="flex flex-col gap-4 lg:gap-6  z-50 h-full">
-          <h2 className="text-3xl md:text-5xl font-bold tracking-[-0.0375rem] whitespace-pre-line font-fg uppercase leading-none text-left">What we've done so far</h2>
+          <h2 className="text-3xl md:text-5xl font-bold tracking-[-0.0375rem] whitespace-pre-line  uppercase leading-none text-left">What we've done so far</h2>
           <span className="flex flex-col">
-            <span className="text-left font-fg text-lg">
+            <span className="text-left  text-lg">
               From bold streetwear brands to award-winning restaurants and globally streamed music labels, we’ve backed the visionaries shaping the future of culture.
             </span>
           </span>
@@ -86,13 +86,13 @@ export default function Portfolio() {
                 <div className="absolute inset-0 size-full bg-gradient-to-b from-foreground/85 to-foreground/20" />
 
                 <div className="relative p-9 flex flex-col text-left text-background gap-2 h-full">
-                  <motion.h6 className="text-[5cqw] leading-[1.2] font-semibold font-fg ">{item.name}</motion.h6>
+                  <motion.h6 className="text-[5cqw] leading-[1.2] font-semibold  ">{item.name}</motion.h6>
                   <motion.p className="opacity-85">{item.description}</motion.p>
 
 
                   <div className="mt-auto flex justify-between items-end">
                     <div className="mt-auto">
-                      <b className="text-[10cqw] leading-none font-fg ">{item.amount}</b>
+                      <b className="text-[10cqw] leading-none  ">{item.amount}</b>
                       <p className="">Amount Invested</p>
                     </div>
 

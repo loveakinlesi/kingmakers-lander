@@ -2,16 +2,19 @@ import { Link as RemixLink, type LinkProps as RemixLinkProps } from "react-route
 
 
 const scrollToAnchor = (anchor: string) => {
-    const element = document.querySelector(anchor);
+    if(typeof window === "undefined") return;
+    if(!anchor.startsWith("#")) return;
+    const element = window.document.querySelector(anchor);
     if (element) {
-        element.scrollIntoView({ behavior: "smooth" });
+        element.scrollIntoView({ behavior: "smooth", block: "end", inline: "nearest" });
     }
 }
-
+// @ts-ignore
 export const Link = (props: RemixLinkProps) => {
-    const isInternal = typeof props.to === "string" && (props.to.startsWith("/") || props.to.startsWith("#") || props.to.startsWith(window.location.origin));
-    if (!isInternal) {
-        <a {...props} onClick={()=>scrollToAnchor(props.to.toString())} />
+    const isInternal = typeof props.to === "string" && props.to.startsWith("#");
+    console.log("🚀 ~ Link ~ isInternal:", isInternal,props.to);
+    if (isInternal) {
+        <span {...props} onClick={()=>scrollToAnchor(props.to.toString())} />
     }
 
     return <RemixLink {...props}/>

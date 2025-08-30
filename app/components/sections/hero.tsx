@@ -62,14 +62,14 @@ export default function Hero() {
         <div className="bg-gradient-to-r from-black/90 to-black/40 absolute inset-0 size-full"></div>
 
         <section className="flex flex-row justify-between relative grow-1 shrink-1 basis-0 section my-12 md:my-20 pt-10 pb-0 md:py-0">
-          <div className="md:max-w-13/20 w-full gap-4 md:gap-6 mx-0 md:min-h-50 h-auto flex flex-col lg:grid md:content-center justify-start text-[#f4f4f4]">
+          <div className="md:max-w-14/20 w-full gap-4 md:gap-6 mx-0 md:min-h-50 h-auto flex flex-col lg:grid md:content-center justify-start text-[#f4f4f4]">
             <div className="flex flex-col gap-6 items-center md:items-start">
-              <h1 className="text-[clamp(2rem,_1.6rem+1.64vw,_2.5rem)] md:text-[clamp(3rem,_1.8rem_+_2.18667vw,_5rem)] font-bold tracking-[-0.075rem] whitespace-pre-line font-fg uppercase leading-none text-center md:text-left">
-                We Don't Just Back Winners. We Make Kings.
+              <h1 className="text-[clamp(2rem,_1.6rem+1.64vw,_2.5rem)] md:text-[clamp(3rem,_1.8rem_+_2.18667vw,_5rem)] font-semibold tracking-[-0.075rem] whitespace-pre-line  leading-none text-center md:text-left">
+                Reshaping the potentials of creative industries.
               </h1>
               <p className="text-base md:text-lg text-center md:text-left">
-                Private equity & credit for the creative industries. We turn culture and lifestyle—fashion, food, music, photography—into world-class brands across Africa and Europe.
-              </p>
+                Accelra is a private equity and credit firm for the creative industries. We turn culture and lifestyle into world-class brands across Africa and Europe. 
+                </p>
             </div>
 
             <div className="flex justify-center md:justify-start">
