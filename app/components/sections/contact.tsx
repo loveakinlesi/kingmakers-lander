@@ -8,7 +8,7 @@ import { Textarea } from '../ui/textarea'
 
 export default function ContactUs() {
     return (
-        <section className=" py-15 sm:py-24 lg:py-32" id="contactus">
+        <section className=" py-15 sm:py-20 lg:py-32" id="contactus">
             <div className="mx-auto max-w-4xl px-4 lg:px-0">
                 <h1 className="text-4xl font-semibold lg:text-5xl">Help us route your inquiry</h1>
                 <p className="text-muted-foreground mt-4 text-lg">We'll help you find the right plan and pricing for your business.</p>

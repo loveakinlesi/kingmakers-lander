@@ -7,7 +7,7 @@ import { cn } from '~/lib/utils'
 export default function DidYouKnoW() {
     return (
         <section>
-            <div className="bg-muted/50 py-24">
+            <div className="bg-muted/50 py-20">
                 <div className="section px-6">
                     <div>
                         {/* <span className="text-primary font-semibold">Did you know?</span> */}
