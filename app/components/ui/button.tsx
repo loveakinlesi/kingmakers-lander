@@ -13,6 +13,7 @@ const buttonVariants = cva(
           "bg-background text-foreground shadow-xs hover:opacity-85",
           dark: "bg-foreground text-background shadow-xs hover:opacity-85",
           menu: "text-inherit hover:opacity-85 hover:text-foreground hover:bg-background text-base",
+          "menu-dark": "text-inherit hover:opacity-85 hover:text-background hover:bg-foreground text-base",
         destructive:
           "bg-destructive text-white shadow-xs hover:bg-destructive/90 focus-visible:ring-destructive/20 dark:focus-visible:ring-destructive/40 dark:bg-destructive/60",
         outline:

@@ -8,7 +8,7 @@ export default function DidYouKnoW() {
     return (
         <section>
             <div className="bg-muted/50 py-24">
-                <div className="mx-auto w-full max-w-5xl px-6">
+                <div className="section px-6">
                     <div>
                         {/* <span className="text-primary font-semibold">Did you know?</span> */}
                         <h2 className="text-primary mt-4 text-4xl font-semibold">Did you know?</h2>

@@ -132,12 +132,12 @@ body {
   body {
     @apply bg-background text-foreground;
   }
-
+/* 
   . {
  font-family: "Familjen Grotesk", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
-  }
+  } */
 
   .section {
     @apply max-w-250 w-full mx-auto px-5 lg:px-0;

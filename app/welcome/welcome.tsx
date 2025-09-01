@@ -1,6 +1,7 @@
 import About from "~/components/sections/about";
 import ContactUs from "~/components/sections/contact";
 import DidYouKnoW from "~/components/sections/didyouknow";
+import FAQs from "~/components/sections/faqs";
 import Hero from "~/components/sections/hero";
 import Philosophy from "~/components/sections/philosophy";
 import TeamSection from "~/components/sections/team";
@@ -15,6 +16,7 @@ export function Welcome() {
    <Philosophy/>
    <About/>
    <TeamSection/>
+   <FAQs/>
    <ContactUs />
     </main>
   );

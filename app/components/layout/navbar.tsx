@@ -8,7 +8,7 @@ const navItems = [
   { name: "About Us", link: "#about" },
   { name: "Our Philosophy", link: "#philosophy" },
   // { name: "Portfolio", link: "#portfolio" },
-  // { name: "Team", link: "#team" },
+  { name: "Team", link: "#team" },
 ];
 
 export default function Navbar() {
@@ -58,22 +58,24 @@ export default function Navbar() {
               : "border-b border-[#ebebf0] backdrop-blur-2xl bg-white/75 text-foreground"
         )}
       >
-        <div className="flex items-center justify-between px-5 lg:px-0 mx-auto w-full max-w-250 h-full">
+        <div className="flex items-center justify-between px-5 lg:px-0 section h-full">
           <Link to="/" className="font-bold text-2xl" onClick={handleNavClick}>
-           <Logo size={24}/>
+            <Logo size={24} />
           </Link>
 
           {/* Desktop nav */}
           <div className="hidden md:grid grid-cols-[1fr_auto] gap-4 ml-8 w-full">
             <nav className="w-full flex items-center space-x-2">
               {navItems.map((item) => (
-                <Button key={item.name} asChild variant="menu">
+                <Button key={item.name} asChild variant={atTop ? "menu" : "menu-dark"}>
                   <Link to={item.link}>{item.name}</Link>
                 </Button>
               ))}
             </nav>
             <div>
+                   <Link to="#contactus">
               <Button variant={atTop ? "default" : "dark"}>Get In Touch</Button>
+              </Link>
             </div>
           </div>
 
@@ -132,9 +134,11 @@ export default function Navbar() {
             ))}
           </nav>
           <div className="mt-auto">
-            <Button className="w-full" variant="default" onClick={handleNavClick}>
-              Get In Touch
-            </Button>
+            <Link to="#contactus" className="font-bold text-2xl" onClick={handleNavClick}>
+              <Button className="w-full" variant="default">
+                Get In Touch
+              </Button>
+            </Link>
           </div>
 
           {/* Optional extras: social / footer */}

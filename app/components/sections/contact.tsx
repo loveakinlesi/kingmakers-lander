@@ -1,15 +1,14 @@
+import { InstagramIcon } from 'lucide-react'
+import { Button } from '../ui/button'
 import { Card } from '../ui/card'
 import { Input } from '../ui/input'
-import { Textarea } from '../ui/textarea'
-import { Button } from '../ui/button'
 import { Label } from '../ui/label'
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '../ui/select'
 import { Link } from '../ui/link'
-import { InstagramIcon } from 'lucide-react'
+import { Textarea } from '../ui/textarea'
 
 export default function ContactUs() {
     return (
-        <section className="bg-muted py-15 sm:py-24 lg:py-32">
+        <section className=" py-15 sm:py-24 lg:py-32" id="contactus">
             <div className="mx-auto max-w-4xl px-4 lg:px-0">
                 <h1 className="text-4xl font-semibold lg:text-5xl">Help us route your inquiry</h1>
                 <p className="text-muted-foreground mt-4 text-lg">We'll help you find the right plan and pricing for your business.</p>
