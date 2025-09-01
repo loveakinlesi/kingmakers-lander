@@ -42,7 +42,7 @@ export default function Hero() {
   return (
       <section
         ref={sectionRef}
-        className="relative lg:-mt-18 justify-center flex flex-col items-center min-h-dvh bg-white"
+        className="relative lg:-mt-18 justify-center flex flex-col items-center min-h-[50dvh] md:min-h-dvh bg-white"
       >
         <div className="absolute max-h-[max(840px,_100vh)] size-full">
           <div className="relative opacity-100 size-full">
@@ -62,7 +62,7 @@ export default function Hero() {
         <div className="bg-gradient-to-r from-black/90 to-black/40 absolute inset-0 size-full"></div>
 
         <section className="flex flex-row justify-between relative grow-1 shrink-1 basis-0 section my-12 md:my-20 pt-10 pb-0 md:py-0">
-          <div className="md:max-w-14/20 w-full gap-4 md:gap-6 mx-0 md:min-h-50 h-auto flex flex-col lg:grid md:content-center justify-start text-[#f4f4f4]">
+          <div className="md:max-w-14/20 w-full gap-4 md:gap-6 mx-0 md:min-h-50 h-auto flex flex-col lg:grid md:content-center justify-center md:justify-start text-[#f4f4f4]">
             <div className="flex flex-col gap-6 items-center md:items-start">
               <h1 className="text-[clamp(2rem,_1.6rem+1.64vw,_2.5rem)] md:text-[clamp(3rem,_1.8rem_+_2.18667vw,_5rem)] font-semibold tracking-[-0.075rem] whitespace-pre-line  leading-none text-center md:text-left">
                 Reshaping the potentials of creative industries.

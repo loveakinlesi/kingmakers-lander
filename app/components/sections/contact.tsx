@@ -19,7 +19,7 @@ export default function ContactUs() {
                                 <h2 className="mb-3 text-lg font-semibold">Collaborate</h2>
                                 <Link
                                     to="mailto:info@accelragroup.com"
-                                    className="text-primary text-lg hover:underline">
+                                    className="text-primary hover:underline">
                                     info@accelragroup.com
                                 </Link>
                                 {/* <p className="mt-3 text-sm">+243 000 000 000</p> */}
@@ -29,10 +29,10 @@ export default function ContactUs() {
                             <div>
                                 <h3 className="mb-3 text-lg font-semibold">Socials</h3>
                                 <p className="">
-                                <InstagramIcon className="inline mr-2" />
+                                <InstagramIcon className="inline mr-2 size-5" />
                                 <Link
                                     to="https://www.instagram.com/accelragroup"
-                                    className="text-primary text-lg hover:underline">
+                                    className="text-primary  hover:underline">
                                  @accelragroup
                                 </Link>
                                 </p>

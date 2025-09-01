@@ -102,7 +102,7 @@ export default function WhoWeAre() {
                 </figure>
 
                 <div className="grid gap-6 md:grid-cols-2 md:gap-12">
-                    <h2 className="text-7xl font-medium">Who We Are</h2>
+                    <h2 className="text-5xl md:text-7xl font-medium">Who We Are</h2>
                     <div className="space-y-6">
                         <p>Accelra invest where culture and lifestyle meet capital. As a private equity and credit investment firm, we are dedicated to unlocking value in the music, photography, food, film, fashion, and other creative industries across African and Europe. </p>
                     </div>
