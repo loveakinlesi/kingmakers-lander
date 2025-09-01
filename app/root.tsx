@@ -15,6 +15,9 @@ import Footer from './components/layout/footer';
 export const links: Route.LinksFunction = () => [
   { rel: "preconnect", href: "https://fonts.googleapis.com" },
   {
+    rel:"icon", href:"/favicon.ico", type:"image/x-icon", sizes:"any"
+  },
+  {
     rel: "preconnect",
     href: "https://fonts.gstatic.com",
     crossOrigin: "anonymous",
