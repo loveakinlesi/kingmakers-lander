@@ -55,7 +55,7 @@ export default function Portfolio() {
         <div className="flex flex-col gap-4 lg:gap-6  z-50 h-full">
           <h2 className="text-3xl md:text-5xl font-bold tracking-[-0.0375rem] whitespace-pre-line  uppercase leading-none text-left">What we've done so far</h2>
           <span className="flex flex-col">
-            <span className="text-left  text-lg">
+            <span className="text-left md:text-lg">
               From bold streetwear brands to award-winning restaurants and globally streamed music labels, we’ve backed the visionaries shaping the future of culture.
             </span>
           </span>

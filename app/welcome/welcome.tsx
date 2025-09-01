@@ -4,6 +4,7 @@ import DidYouKnoW from "~/components/sections/didyouknow";
 import FAQs from "~/components/sections/faqs";
 import Hero from "~/components/sections/hero";
 import Philosophy from "~/components/sections/philosophy";
+import Portfolio from "~/components/sections/portfolio";
 import TeamSection from "~/components/sections/team";
 import WhoWeAre from "~/components/sections/whoweare";
 
@@ -14,6 +15,7 @@ export function Welcome() {
    <WhoWeAre/>
    <DidYouKnoW/>
    <Philosophy/>
+   {/* <Portfolio/> */}
    <About/>
    <TeamSection/>
    <FAQs/>

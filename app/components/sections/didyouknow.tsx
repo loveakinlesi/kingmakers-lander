@@ -12,8 +12,8 @@ export default function DidYouKnoW() {
                     <div>
                         {/* <span className="text-primary font-semibold">Did you know?</span> */}
                         <h2 className="text-primary mt-4 text-4xl font-semibold">Did you know?</h2>
-                        <p className="text-foreground/65 mb-4 mt-4 text-lg">The creative industries in Africa generate approximately <b className="text-primary">$4.2 billion</b> annually, with projections to reach <b className="text-primary">$20 billion</b> and create <b className="text-secondary">20 million</b> jobs in the coming years.</p>
-                        <p className="text-foreground/65 mb-12 mt-4 text-lg">
+                        <p className="text-foreground/65 mb-4 mt-4 md:text-lg">The creative industries in Africa generate approximately <b className="text-primary">$4.2 billion</b> annually, with projections to reach <b className="text-primary">$20 billion</b> and create <b className="text-secondary">20 million</b> jobs in the coming years.</p>
+                        <p className="text-foreground/65 mb-12 mt-4 md:text-lg">
                         With our disciplined and multi-faceted investment strategy, we back emerging creative businesses, helping them reach their full potential and deliver strong returns for our partners. Our goal is to transform and scale creative businesses to drive long-term sustainable profitability and superior investment returns.</p>
                     </div>
                 </div>

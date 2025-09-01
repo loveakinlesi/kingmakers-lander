@@ -7,8 +7,8 @@ import { Link } from "../ui/link";
 const navItems = [
   { name: "About Us", link: "#about" },
   { name: "Our Philosophy", link: "#philosophy" },
-  // { name: "Portfolio", link: "#portfolio" },
   { name: "Team", link: "#team" },
+  { name: "FAQs", link: "#faqs" },
 ];
 
 export default function Navbar() {

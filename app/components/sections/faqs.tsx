@@ -33,7 +33,7 @@ export default function FAQs() {
     ]
 
     return (
-        <section className="bg-muted py-16 md:py-20">
+        <section className="bg-muted py-16 md:py-20" id='faqs'>
             <div className="section border-t px-6">
                 <span className="text-caption -ml-6 -mt-3.5 block w-max bg-muted px-6">FAQs</span>
                 <div className="mt-12 gap-4 sm:grid sm:grid-cols-2 md:mt-24">

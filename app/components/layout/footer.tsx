@@ -1,4 +1,5 @@
 import { Link } from "../ui/link"
+import { Logo } from "../ui/logo"
 
 
 const links = [
@@ -8,12 +9,21 @@ const links = [
     },
     {
         title: 'Our Philosophy',
-        href: '#',
+        href: '#philosophy',
+    },
+    {
+        title: 'Team',
+        href: '#team',
+    },
+    {
+        title: 'FAQs',
+        href: '#faqs',
     },
     {
         title: 'Contact Us',
-        href: '#',
+        href: '#contactus',
     },
+
 ]
 
 export default function FooterSection() {
@@ -21,13 +31,13 @@ export default function FooterSection() {
         <footer className="bg-foreground border-b py-12">
             <div className="section px-6">
                 <div className="flex flex-wrap justify-between gap-12">
-                    <div className="order-last flex items-center gap-3 md:order-first">
+                    <div className="order-last flex items-start md:items-center gap-3 md:order-first">
                         <Link
                             to="#"
                             aria-label="go home">
-                            {/* <LogoIcon /> */}
+                            <Logo size={16} className="text-white" />
                         </Link>
-                        <span className="text-background block text-center text-sm">&copy;{new Date().getFullYear()} Accelra Group, All rights reserved</span>
+                        <span className="text-background block text-sm text-right md:text-center">&copy;{new Date().getFullYear()} Accelra Group, All rights reserved</span>
                     </div>
 
                     <div className="order-first flex flex-wrap gap-x-6 gap-y-4 md:order-last">

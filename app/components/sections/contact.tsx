@@ -11,15 +11,15 @@ export default function ContactUs() {
         <section className=" py-15 sm:py-20 lg:py-32" id="contactus">
             <div className="mx-auto max-w-4xl px-4 lg:px-0">
                 <h1 className="text-4xl font-semibold lg:text-5xl">Help us route your inquiry</h1>
-                <p className="text-muted-foreground mt-4 text-lg">We'll help you find the right plan and pricing for your business.</p>
+                <p className="text-muted-foreground mt-4 md:text-lg">We'll help you find the right plan and pricing for your business.</p>
                 <div className="mt-12 grid gap-12 lg:grid-cols-5">
                     <div className="grid grid-cols-2 lg:col-span-2 lg:block lg:space-y-12">
                         <div className="flex flex-col justify-between space-y-6">
                             <div>
-                                <h2 className="mb-3 text-lg font-semibold">Collaborate</h2>
+                                <h2 className="mb-1 md:text-lg font-semibold">Collaborate</h2>
                                 <Link
                                     to="mailto:info@accelragroup.com"
-                                    className="text-primary hover:underline">
+                                    className="text-primary hover:underline text-sm md:text-base">
                                     info@accelragroup.com
                                 </Link>
                                 {/* <p className="mt-3 text-sm">+243 000 000 000</p> */}
@@ -27,12 +27,12 @@ export default function ContactUs() {
                         </div>
                         <div className="flex flex-col justify-between space-y-6">
                             <div>
-                                <h3 className="mb-3 text-lg font-semibold">Socials</h3>
+                                <h3 className="mb-1 md:text-lg font-semibold">Socials</h3>
                                 <p className="">
                                 <InstagramIcon className="inline mr-2 size-5" />
                                 <Link
                                     to="https://www.instagram.com/accelragroup"
-                                    className="text-primary  hover:underline">
+                                    className="text-primary  hover:underline text-sm md:text-base">
                                  @accelragroup
                                 </Link>
                                 </p>

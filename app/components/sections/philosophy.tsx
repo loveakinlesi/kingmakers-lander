@@ -45,7 +45,7 @@ export default function Philosophy() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-10 section">
                 {
                     philosophies.map((item, index) => (
-                        <div key={index} className="rounded-[20px] overflow-hidden relative min-h-80 h-fit md:h-150 p-6 flex flex-col group">
+                        <div key={index} className="rounded-[20px] overflow-hidden relative min-h-80 h-fit md:h-150 p-4 md:p-6 flex flex-col group">
                           
                                 <figure className="absolute size-full inset-0">
                                     <img src={item.image} alt="" className="size-full object-cover rounded-[20px] grayscale group-hover:grayscale-0 transition-all duration-500 ease-in-out" /> 
@@ -53,7 +53,7 @@ export default function Philosophy() {
                                 <div className="absolute size-full inset-0 bg-gradient-to-b from-transaprent to-black"></div>
   <div className="flex flex-col gap-4 relative mt-auto text-background">
                                 <h6 className="text-xl md:text-3xl font-semibold">{item.title}</h6>
-                                <p className="text-base opacity-85">{item.description}</p>
+                                <p className="text-sm md:text-base opacity-85">{item.description}</p>
                             </div>
                         </div>
                     ))
