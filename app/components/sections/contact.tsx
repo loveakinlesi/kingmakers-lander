@@ -1,6 +1,6 @@
 import { InstagramIcon } from 'lucide-react'
 import { Button } from '../ui/button'
-import { Card } from '../ui/card'
+import { Card, CardContent, CardDescription, CardTitle } from '../ui/card'
 import { Input } from '../ui/input'
 import { Label } from '../ui/label'
 import { Link } from '../ui/link'
@@ -8,12 +8,20 @@ import { Textarea } from '../ui/textarea'
 
 export default function ContactUs() {
     return (
-        <section className=" py-15 sm:py-20 lg:py-32" id="contactus">
-            <div className="mx-auto max-w-4xl px-4 lg:px-0">
-                <h1 className="text-4xl font-semibold lg:text-5xl">Help us route your inquiry</h1>
-                <p className="text-muted-foreground mt-4 md:text-lg">We'll help you find the right plan and pricing for your business.</p>
-                <div className="mt-12 grid gap-12 lg:grid-cols-5">
-                    <div className="grid grid-cols-2 lg:col-span-2 lg:block lg:space-y-12">
+        <section className="bg-gray-50  py-15 sm:py-20 lg:py-32" id="contactus">
+            <div className="section border-t px-6">
+                <span className="text-caption -ml-6 -mt-3.5 block w-max bg-gray-50 px-6 dark:bg-gray-950">Contact Us</span>
+
+                <div className="mt-12 gap-4 sm:grid sm:grid-cols-2 md:mt-24">
+                    <div className="sm:w-3/5">
+                        <h2 className="text-3xl font-semibold sm:text-4xl">Help us route your inquiry</h2>
+                    </div>
+                    <div className="mt-6 sm:mt-0">
+                        <p>We'll help you find the right plan and pricing for your business.</p>
+                    </div>
+                </div>
+                <div className="mt-12 sm:grid sm:grid-cols-2">
+                    <div className="grid grid-cols-2 lg:block lg:space-y-12">
                         <div className="flex flex-col justify-between space-y-6">
                             <div>
                                 <h2 className="mb-1 md:text-lg font-semibold">Collaborate</h2>
@@ -29,12 +37,12 @@ export default function ContactUs() {
                             <div>
                                 <h3 className="mb-1 md:text-lg font-semibold">Socials</h3>
                                 <p className="">
-                                <InstagramIcon className="inline mr-2 size-5" />
-                                <Link
-                                    to="https://www.instagram.com/accelragroup"
-                                    className="text-primary  hover:underline text-sm md:text-base">
-                                 @accelragroup
-                                </Link>
+                                    <InstagramIcon className="inline mr-2 size-5" />
+                                    <Link
+                                        to="https://www.instagram.com/accelragroup"
+                                        className="text-primary  hover:underline text-sm md:text-base">
+                                        @accelragroup
+                                    </Link>
                                 </p>
                             </div>
                         </div>
@@ -42,10 +50,12 @@ export default function ContactUs() {
 
                     <form
                         action=""
-                        className="@container lg:col-span-3">
-                        <Card className="p-8 sm:p-12">
-                            <h3 className="text-xl font-semibold">Let's get you to the right place</h3>
-                            <p className="mt-4 text-sm">Reach out to our sales team! We’re eager to learn more about how you plan to use our application.</p>
+                        className="@container">
+                        <Card className="">
+                          <CardContent>
+                              <CardTitle className='mb-4'>Let's get you to the right place</CardTitle>
+                            <CardDescription>Reach out to our sales team! We’re eager to learn more about how you plan to use our application.</CardDescription>
+                       
 
                             <div className="**:[&>label]:block mt-12 space-y-6 *:space-y-3">
                                 <div className="@md:grid-cols-2 grid gap-3 *:space-y-3">
@@ -79,6 +89,7 @@ export default function ContactUs() {
                                 </div>
                                 <Button variant="dark">Submit</Button>
                             </div>
+                               </CardContent>
                         </Card>
                     </form>
                 </div>

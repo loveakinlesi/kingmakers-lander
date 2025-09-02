@@ -1,19 +1,19 @@
 
 const numbers = [
     {
-        title: "Capital Deployed",
-        value: "$125m+"
+        title: "Invested",
+        value: "$25K+"
     },
     {
-        title: "Projects Backed",
-        value: "32"
+        title: "Businesses",
+        value: "3"
     },
     {
-        title: "Value Creation Target",
-        value: "$500m"
+        title: "ROI",
+        value: "30%+"
     }, {
-        title: "Countries",
-        value: "12"
+        title: "Sectors",
+        value: "3"
     }
 ]
 
@@ -21,11 +21,9 @@ export default function Numbers() {
 
 
     return (
-        <section className="section flex flex-col my-10 gap-10 md:gap-15 lg:gap-20">
-                {/* <h2 className="text-3xl md:text-5xl font-bold tracking-[-0.0375rem] whitespace-pre-line  uppercase leading-none text-left lg:text-center">Let's run the numbers</h2> */}
+        <section className=" flex flex-col mb-10 gap-10 md:gap-15 lg:gap-20">
 
-
-            <ol className="grid sm:grid-cols-2 md:grid-cols-4 gap-4 grid-flow-row list-none">
+            <ol className="grid sm:grid-cols-2 md:grid-cols-4 gap-4 grid-flow-row list-none section">
                 {
                     numbers.map((number, index) => {
                         return (

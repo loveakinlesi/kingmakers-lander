@@ -1,5 +1,6 @@
-import { Link } from "react-router";
 import { Button } from "../ui/button";
+import { Modal } from "../ui/modal";
+import { PartnershipForm } from "../ui/partnership-form";
 
 
 export default function CallToAction() {
@@ -12,14 +13,14 @@ export default function CallToAction() {
 </p>
 
                     <div className="mt-12 flex flex-wrap justify-center gap-4">
-                        <Button
-                            asChild
+                        <Modal trigger={<Button
                             variant="dark"
                             size="lg">
-                            <Link to="/">
                                 <span>Start a Partnership</span>
-                            </Link>
-                        </Button>
+                            </Button>}>
+                <h2 className="text-2xl font-semibold mb-4">Partnership Inquiry</h2>
+                <PartnershipForm />
+              </Modal>
 
                     </div>
                 </div>
