@@ -27,6 +27,7 @@
     "dialog": "^0.3.1",
     "embla-carousel-autoplay": "^8.6.0",
     "embla-carousel-react": "^8.6.0",
+    "form": "^0.2.5",
     "gsap": "^3.13.0",
     "input": "^1.0.1",
     "isbot": "^5.1.27",

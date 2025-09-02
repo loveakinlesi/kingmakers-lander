@@ -63,8 +63,8 @@ export default function Hero() {
         <div className="bg-gradient-to-r from-black/90 to-black/40 absolute inset-0 size-full"></div>
 
         <section className="flex flex-row justify-between relative grow-1 shrink-1 basis-0 section my-12 md:my-20 py-10">
-          <div className="md:max-w-14/20 w-full gap-4 md:gap-6 mx-0 md:min-h-50 h-auto flex flex-col lg:grid content-center justify-center md:justify-start text-[#f4f4f4]">
-            <div className="flex flex-col gap-6 items-start">
+          <div className="md:max-w-14/20 w-full gap-4 md:gap-6 mx-0 md:min-h-50 h-auto flex flex-col lg:grid content-center justify-center md:justify-start ">
+            <div className="flex flex-col gap-6 items-start text-[#f4f4f4]">
               <h1 className="text-[clamp(2rem,_1.6rem+1.64vw,_2.5rem)] md:text-[clamp(3rem,_1.8rem_+_2.18667vw,_5rem)] font-semibold tracking-[-0.075rem] whitespace-pre-line  leading-none text-left">
                 Reshaping the potentials of creative industries.
               </h1>
@@ -75,7 +75,7 @@ export default function Hero() {
 
             <div className="flex justify-start">
               <Modal trigger={<Button>Partner with Us</Button>}>
-                <h2 className="text-2xl font-semibold mb-4">Partnership Inquiry</h2>
+                 <h2 className="text-2xl font-semibold mb-4">Partnership Inquiry</h2>
                 <PartnershipForm />
               </Modal>
             </div>
