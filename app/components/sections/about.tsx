@@ -26,8 +26,7 @@
 
 import { Button } from '../ui/button'
 import { ChevronRight } from 'lucide-react'
-import { Modal } from "../ui/modal";
-import { PartnershipForm } from "../ui/partnership-form";
+import { PartnershipModal } from "../ui/partnership-modal";
 
 export default function StatsSection() {
     return (
@@ -39,17 +38,14 @@ export default function StatsSection() {
                     </h2>
                     <p className="mt-4 md:text-lg">This is an open invitation to partner with us on our journey of growth and impact. As we scale with purpose and strategy towards 2030, we invite you to collaborate with us as we unlock new potentials and create lasting value for creative businesses. </p>
                     <div className="mt-8 flex gap-3">
-                        <Modal trigger={<Button
+                        <PartnershipModal trigger={<Button
                             className="pr-2" variant="dark">
                                Become a Partner
                                 <ChevronRight
                                     strokeWidth={2.5}
                                     className="size-3.5! opacity-50"
                                 />
-                            </Button>}>
-                <h2 className="text-2xl font-semibold mb-4">Partnership Inquiry</h2>
-                <PartnershipForm />
-              </Modal>
+                            </Button>} />
                     </div>
                 </div>
             </div>

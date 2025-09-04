@@ -3,8 +3,7 @@ import { gsap } from "gsap";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
 import { useRef } from "react";
 import { Button } from "../ui/button";
-import { Modal } from "../ui/modal";
-import { PartnershipForm } from "../ui/partnership-form";
+import { PartnershipModal } from "../ui/partnership-modal";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -23,8 +22,8 @@ export default function Hero() {
         imgRef.current,
         { scaleX: 1, scaleY: 1 }, // mirrored + slightly zoomed in
         {
-          scaleX: 5, // mirrored & more zoom
-          scaleY: 5,
+          scaleX: 1.2, // mirrored & more zoom
+          scaleY: 1.2,
           ease: "none",
           transformOrigin: "50% 50%",
           scrollTrigger: {
@@ -51,7 +50,7 @@ export default function Hero() {
               <figure>
             <img
                   ref={imgRef}
-                  src="https://images.unsplash.com/photo-1663275160801-6ce8e9a174b9?q=80&w=2456&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  src="https://images.unsplash.com/photo-1643916861364-02e63ce3e52f?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                   alt="Hero"
                   className="absolute size-full object-left-top lg:object-[50%_20%] object-cover transform-gpu will-change-transform"
                 />
@@ -74,10 +73,7 @@ export default function Hero() {
             </div>
 
             <div className="flex justify-start">
-              <Modal trigger={<Button>Partner with Us</Button>}>
-                 <h2 className="text-2xl font-semibold mb-4">Partnership Inquiry</h2>
-                <PartnershipForm />
-              </Modal>
+              <PartnershipModal trigger={<Button>Partner with Us</Button>} />
             </div>
           </div>
         </section>

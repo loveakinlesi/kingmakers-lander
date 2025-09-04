@@ -1,6 +1,5 @@
 import { Button } from "../ui/button";
-import { Modal } from "../ui/modal";
-import { PartnershipForm } from "../ui/partnership-form";
+import { PartnershipModal } from "../ui/partnership-modal";
 
 
 export default function CallToAction() {
@@ -13,14 +12,11 @@ export default function CallToAction() {
 </p>
 
                     <div className="mt-12 flex flex-wrap justify-center gap-4">
-                        <Modal trigger={<Button
+                        <PartnershipModal trigger={<Button
                             variant="dark"
                             size="lg">
                                 <span>Start a Partnership</span>
-                            </Button>}>
-                <h2 className="text-2xl font-semibold mb-4">Partnership Inquiry</h2>
-                <PartnershipForm />
-              </Modal>
+                            </Button>} />
 
                     </div>
                 </div>
