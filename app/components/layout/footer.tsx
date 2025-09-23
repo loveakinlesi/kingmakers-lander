@@ -1,5 +1,5 @@
-import { Link } from "../ui/link"
-import { Logo } from "../ui/logo"
+import { Link } from "~/components/ui/link"
+import { Logo } from "~/components/ui/logo"
 
 
 const links = [

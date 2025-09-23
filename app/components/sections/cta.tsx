@@ -1,5 +1,5 @@
-import { Button } from "../ui/button";
-import { Link } from "../ui/link";
+import { Button } from "~/components/ui/button";
+import { Link } from "~/components/ui/link";
 
 
 export default function CallToAction() {
@@ -12,9 +12,8 @@ export default function CallToAction() {
                     </p>
 
                     <div className="mt-12 flex flex-wrap justify-center gap-4">
-                        {/* <FormModal formId="3xKJ0J" trigger={} /> */}
 
-                        <Link target="_blank" to="https://tally.so/r/3xKJ0J">
+                        <Link  to="/apply">
                             <Button
                                 variant="dark"
                                 size="lg">

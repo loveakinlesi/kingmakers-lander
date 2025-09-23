@@ -4,7 +4,7 @@ import { AnimatePresence, motion } from "motion/react";
 import { useMemo, useState } from 'react';
 import { Link } from 'react-router';
 import { cn } from '~/lib/utils';
-import { Button } from '../ui/button';
+import { Button } from '~/components/ui/button';
 
 
 const autoplayOptions: AutoplayOptionsType = {

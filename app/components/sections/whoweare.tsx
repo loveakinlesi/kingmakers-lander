@@ -1,6 +1,6 @@
-import { Button } from '../ui/button'
+import { Button } from '~/components/ui/button'
 import { ChevronRight } from 'lucide-react'
-import { Link } from '../ui/link'
+import { Link } from '~/components/ui/link'
 import { useGSAP } from '@gsap/react'
 import { useRef } from 'react'
 import gsap from 'gsap'

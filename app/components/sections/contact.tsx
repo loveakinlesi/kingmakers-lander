@@ -1,7 +1,7 @@
 import { InstagramIcon } from 'lucide-react'
-import { Card, CardContent, CardDescription, CardTitle } from '../ui/card'
-import { TallyForm } from '../ui/form-modal'
-import { Link } from '../ui/link'
+import { Card, CardContent, CardDescription, CardTitle } from '~/components/ui/card'
+import { TallyForm } from '~/components/ui/form-modal'
+import { Link } from '~/components/ui/link'
 
 export default function ContactUs() {
     return (

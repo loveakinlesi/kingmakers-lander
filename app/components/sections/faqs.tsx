@@ -1,34 +1,34 @@
 'use client'
 
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '../ui/accordion'
-import { Link } from '../ui/link'
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '~/components/ui/accordion'
+import { Link } from '~/components/ui/link'
 
 export default function FAQs() {
     const faqItems = [
         {
             id: 'item-1',
-            question: 'How long does shipping take?',
-            answer: 'Standard shipping takes 3-5 business days, depending on your location. Express shipping options are available at checkout for 1-2 business day delivery.',
+            question: 'What industries does Accelra specialize in?',
+            answer: 'We specialize in creative sectors — including fashion, media, entertainment, design, and lifestyle — with a focus on businesses that shape culture and have the potential to scale globally.',
         },
         {
             id: 'item-2',
-            question: 'What payment methods do you accept?',
-            answer: 'We accept all major credit cards (Visa, Mastercard, American Express), PayPal, Apple Pay, and Google Pay. For enterprise customers, we also offer invoicing options.',
+            question: 'How does Accelra support businesses beyond investment?',
+            answer: 'In addition to providing capital, we bring discipline, hands-on partnership, and strategic networks to help companies grow sustainably and expand into new markets.',
         },
         {
             id: 'item-3',
-            question: 'Can I change or cancel my order?',
-            answer: 'You can modify or cancel your order within 1 hour of placing it. After this window, please contact our customer support team who will assist you with any changes.',
+            question: 'What makes Accelra different from other investment firms?',
+            answer: 'Our unique focus on creative industries, combined with our local presence in Africa and Europe and global investor connections, allows us to bridge culture and capital in ways traditional firms often overlook.',
         },
         {
             id: 'item-4',
-            question: 'Do you ship internationally?',
-            answer: "Yes, we ship to over 50 countries worldwide. International shipping typically takes 7-14 business days. Additional customs fees may apply depending on your country's import regulations.",
+            question: 'Does Accelra only provide equity funding?',
+            answer: "No. We provide both private equity and credit solutions, tailored to the needs of each business we partner with.",
         },
         {
             id: 'item-5',
-            question: 'What is your return policy?',
-            answer: 'We offer a 30-day return policy for most items. Products must be in original condition with tags attached. Some specialty items may have different return terms, which will be noted on the product page.',
+            question: 'Who can work with Accelra?',
+            answer: 'We work with two main groups: Businesses seeking growth capital to scale. Partners and investors who want to deploy capital into creative industry opportunities.',
         },
     ]
 

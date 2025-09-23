@@ -1,14 +1,14 @@
 import { useEffect, useState, useRef } from "react";
 import { cn } from "~/lib/utils";
-import { Button } from "../ui/button";
-import { Logo } from "../ui/logo";
-import { Link } from "../ui/link";
+import { Button } from "~/components/ui/button";
+import { Logo } from "~/components/ui/logo";
+import { Link } from "~/components/ui/link";
 
 const navItems = [
-  { name: "About Us", link: "#about" },
-  { name: "Our Philosophy", link: "#philosophy" },
-  { name: "Team", link: "#team" },
-  { name: "FAQs", link: "#faqs" },
+  { name: "About Us", link: "/#about" },
+  { name: "Our Philosophy", link: "/#philosophy" },
+  { name: "Team", link: "/#team" },
+  { name: "FAQs", link: "/#faqs" },
 ];
 
 export default function Navbar() {
@@ -73,7 +73,7 @@ export default function Navbar() {
               ))}
             </nav>
             <div>
-                   <Link to="#contactus">
+                   <Link to="/#contactus">
               <Button variant={atTop ? "default" : "dark"}>Get In Touch</Button>
               </Link>
             </div>
@@ -134,7 +134,7 @@ export default function Navbar() {
             ))}
           </nav>
           <div className="mt-auto">
-            <Link to="#contactus" className="font-bold text-2xl" onClick={handleNavClick}>
+            <Link to="/#contactus" className="font-bold text-2xl" onClick={handleNavClick}>
               <Button className="w-full" variant="default">
                 Get In Touch
               </Button>

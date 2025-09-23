@@ -1,7 +1,7 @@
 
-import { ToggleGroup, ToggleGroupItem } from '../ui/toggle-group'
+import { ToggleGroup, ToggleGroupItem } from '~/components/ui/toggle-group'
 import { Bold, Calendar1, Ellipsis, Italic, Strikethrough, Underline } from 'lucide-react'
-import { Button } from '../ui/button'
+import { Button } from '~/components/ui/button'
 import { cn } from '~/lib/utils'
 
 export default function DidYouKnoW() {
