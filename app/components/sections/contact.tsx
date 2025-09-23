@@ -1,10 +1,7 @@
 import { InstagramIcon } from 'lucide-react'
-import { Button } from '../ui/button'
 import { Card, CardContent, CardDescription, CardTitle } from '../ui/card'
-import { Input } from '../ui/input'
-import { Label } from '../ui/label'
+import { TallyForm } from '../ui/form-modal'
 import { Link } from '../ui/link'
-import { Textarea } from '../ui/textarea'
 
 export default function ContactUs() {
     return (
@@ -21,7 +18,7 @@ export default function ContactUs() {
                     </div>
                 </div>
                 <div className="mt-12 sm:grid sm:grid-cols-2">
-                    <div className="grid grid-cols-2 lg:block lg:space-y-12">
+                    <div className="grid grid-cols-2 lg:block lg:space-y-12 mb-4">
                         <div className="flex flex-col justify-between space-y-6">
                             <div>
                                 <h2 className="mb-1 md:text-lg font-semibold">Collaborate</h2>
@@ -55,40 +52,7 @@ export default function ContactUs() {
                           <CardContent>
                               <CardTitle className='mb-4'>Let's get you to the right place</CardTitle>
                             <CardDescription>Reach out to our sales team! We’re eager to learn more about how you plan to use our application.</CardDescription>
-                       
-
-                            <div className="**:[&>label]:block mt-12 space-y-6 *:space-y-3">
-                                <div className="@md:grid-cols-2 grid gap-3 *:space-y-3">
-                                    <div>
-                                        <Label
-                                            htmlFor="name"
-                                            className="space-y-2">
-                                            Full name
-                                        </Label>
-                                        <Input
-                                            type="text"
-                                            id="name"
-                                            required
-                                        />
-                                    </div>
-                                    <div>
-                                        <Label htmlFor="email">Email</Label>
-                                        <Input
-                                            type="email"
-                                            id="email"
-                                            required
-                                        />
-                                    </div>
-                                </div>
-                                <div>
-                                    <Label htmlFor="msg">Message</Label>
-                                    <Textarea
-                                        id="msg"
-                                        rows={3}
-                                    />
-                                </div>
-                                <Button variant="dark">Submit</Button>
-                            </div>
+                            <TallyForm formId="nPKYg1" className='h-[450px]' />
                                </CardContent>
                         </Card>
                     </form>

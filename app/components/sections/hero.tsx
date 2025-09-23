@@ -3,7 +3,7 @@ import { gsap } from "gsap";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
 import { useRef } from "react";
 import { Button } from "../ui/button";
-import { PartnershipModal } from "../ui/partnership-modal";
+import { Link } from "../ui/link";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -40,43 +40,46 @@ export default function Hero() {
   }, []);
 
   return (
-      <section
-        ref={sectionRef}
-        className="relative lg:-mt-18 justify-center flex flex-col items-center min-h-[75dvh] md:min-h-dvh bg-white"
-      >
-        <div className="absolute max-h-[max(840px,_100vh)] size-full">
-          <div className="relative opacity-100 size-full">
-            <div className="absolute h-full w-full inset-0 overflow-hidden">
-              <figure>
-            <img
-                  ref={imgRef}
-                  src="https://images.unsplash.com/photo-1643916861364-02e63ce3e52f?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                  alt="Hero"
-                  className="absolute size-full object-left-top lg:object-[50%_20%] object-cover transform-gpu will-change-transform"
-                />
-              </figure>
-            </div>
+    <section
+      ref={sectionRef}
+      className="relative lg:-mt-18 justify-center flex flex-col items-center min-h-[75dvh] md:min-h-dvh bg-white"
+    >
+      <div className="absolute max-h-[max(840px,_100vh)] size-full">
+        <div className="relative opacity-100 size-full">
+          <div className="absolute h-full w-full inset-0 overflow-hidden">
+            <figure>
+              <img
+                ref={imgRef}
+                src="https://images.unsplash.com/photo-1643916861364-02e63ce3e52f?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="Hero"
+                className="absolute size-full object-left-top lg:object-[50%_20%] object-cover transform-gpu will-change-transform"
+              />
+            </figure>
           </div>
         </div>
+      </div>
 
-        <div className="bg-gradient-to-r from-black/90 to-black/40 absolute inset-0 size-full"></div>
+      <div className="bg-gradient-to-r from-black/90 to-black/40 absolute inset-0 size-full"></div>
 
-        <section className="flex flex-row justify-between relative grow-1 shrink-1 basis-0 section my-12 md:my-20 py-10">
-          <div className="md:max-w-14/20 w-full gap-4 md:gap-6 mx-0 md:min-h-50 h-auto flex flex-col lg:grid content-center justify-center md:justify-start ">
-            <div className="flex flex-col gap-6 items-start text-[#f4f4f4]">
-              <h1 className="text-[clamp(2rem,_1.6rem+1.64vw,_2.5rem)] md:text-[clamp(3rem,_1.8rem_+_2.18667vw,_5rem)] font-semibold tracking-[-0.075rem] whitespace-pre-line  leading-none text-left">
-                Reshaping the potentials of creative industries.
-              </h1>
-              <p className="text-base md:text-lg text-left">
-                Accelra is a private equity and credit firm for the creative industries. We turn culture and lifestyle into world-class brands across Africa and Europe. 
-                </p>
-            </div>
-
-            <div className="flex justify-start">
-              <PartnershipModal trigger={<Button>Partner with Us</Button>} />
-            </div>
+      <section className="flex flex-row justify-between relative grow-1 shrink-1 basis-0 section my-12 md:my-20 py-10">
+        <div className="md:max-w-14/20 w-full gap-4 md:gap-6 mx-0 md:min-h-50 h-auto flex flex-col lg:grid content-center justify-center md:justify-start ">
+          <div className="flex flex-col gap-6 items-start text-[#f4f4f4]">
+            <h1 className="text-[clamp(2rem,_1.6rem+1.64vw,_2.5rem)] md:text-[clamp(3rem,_1.8rem_+_2.18667vw,_5rem)] font-semibold tracking-[-0.075rem] whitespace-pre-line  leading-none text-left">
+              Reshaping the potentials of creative industries.
+            </h1>
+            <p className="text-base md:text-lg text-left">
+              Accelra is a private equity and credit firm for the creative industries. We turn culture and lifestyle into world-class brands across Africa and Europe.
+            </p>
           </div>
-        </section>
+
+          <div className="flex justify-start">
+            {/* <FormModal formId="3xKJ0J" trigger={} /> */}
+            <Link target="_blank" to="https://tally.so/r/3xKJ0J">
+              <Button>Partner with Us</Button>
+            </Link>
+          </div>
+        </div>
       </section>
+    </section>
   );
 }

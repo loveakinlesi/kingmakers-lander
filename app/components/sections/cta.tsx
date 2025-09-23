@@ -1,5 +1,5 @@
 import { Button } from "../ui/button";
-import { PartnershipModal } from "../ui/partnership-modal";
+import { Link } from "../ui/link";
 
 
 export default function CallToAction() {
@@ -9,14 +9,18 @@ export default function CallToAction() {
                 <div className="max-w-100 flex flex-col items-start">
                     <h2 className="text-balance text-4xl font-semibold lg:text-5xl ">Ready to Build Your Legacy?</h2>
                     <p className="mt-4  opacity-80 max-w-xl mx-auto">Join the movement to crown the next generation of business kings and queens. Partner with us for meaningful exits and strategic scale by 2030.
-</p>
+                    </p>
 
                     <div className="mt-12 flex flex-wrap justify-center gap-4">
-                        <PartnershipModal trigger={<Button
-                            variant="dark"
-                            size="lg">
+                        {/* <FormModal formId="3xKJ0J" trigger={} /> */}
+
+                        <Link target="_blank" to="https://tally.so/r/3xKJ0J">
+                            <Button
+                                variant="dark"
+                                size="lg">
                                 <span>Start a Partnership</span>
-                            </Button>} />
+                            </Button>
+                        </Link>
 
                     </div>
                 </div>

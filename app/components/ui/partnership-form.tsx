@@ -35,6 +35,7 @@ export function PartnershipForm() {
 
   return (
     <Form {...form}>
+   <iframe data-tally-src="https://tally.so/embed/3xKJ0J?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1" loading="lazy" width="100%" height="1177" title="Partner with Accelra Group "></iframe>
       <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
         <FormField
           control={form.control}
