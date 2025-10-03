@@ -86,7 +86,7 @@ export default function WhoWeAre() {
                 <figure className='relative w-full h-full aspect-video border-6 border-primary rounded-(--radius) overflow-hidden ' ref={sectionRef}>
                 <img
                     className=" grayscale absolute w-full h-full aspect-video object-cover"
-                    src="https://images.unsplash.com/photo-1530099486328-e021101a494a?q=80&w=2747&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    src="https://images.pexels.com/photos/19867366/pexels-photo-19867366.jpeg"
                     alt="team image"
                     loading="lazy"
                 />
@@ -94,7 +94,7 @@ export default function WhoWeAre() {
                      [clip-path:circle(var(--r,0px)_at_var(--x,0px)_var(--y,0px))] bg-primary/10">
                  <img
                     className='w-full h-full object-cover rounded-(--radius) mix-blend-overlay'
-                    src="https://images.unsplash.com/photo-1530099486328-e021101a494a?q=80&w=2747&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    src="https://images.pexels.com/photos/19867366/pexels-photo-19867366.jpeg"
                     alt="team image"
                     loading="lazy"
                 />
@@ -104,7 +104,7 @@ export default function WhoWeAre() {
                 <div className="grid gap-6 md:grid-cols-2 md:gap-12">
                     <h2 className="text-5xl md:text-7xl font-medium">Who We Are</h2>
                     <div className="space-y-6">
-                        <p>Accelra invest where culture and lifestyle meet capital. As a private equity and credit investment firm, we are dedicated to unlocking value in the music, photography, food, film, fashion, and other creative industries across African and Europe. </p>
+                        <p>At Accelra, we live by the belief ex parvo magnus — from little, great things. We see potential where others see limitation, and we commit ourselves to turning small beginnings into lasting impact. Whether in our people, our ideas, or the businesses we serve, we invest in growth, nurture resilience, and accelerate progress. Every seed holds the power to become a forest, and every spark the ability to light a path. Accelra exists to unlock that greatness in the creative sector.</p>
                     </div>
                 </div>
             </div>

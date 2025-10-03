@@ -65,11 +65,10 @@ export default function Hero() {
         <div className="md:max-w-14/20 w-full gap-4 md:gap-6 mx-0 md:min-h-50 h-auto flex flex-col lg:grid content-center justify-center md:justify-start ">
           <div className="flex flex-col gap-6 items-start text-[#f4f4f4]">
             <h1 className="text-[clamp(2rem,_1.6rem+1.64vw,_2.5rem)] md:text-[clamp(3rem,_1.8rem_+_2.18667vw,_5rem)] font-semibold tracking-[-0.075rem] whitespace-pre-line  leading-none text-left">
-              Reshaping the potentials of creative industries.
+            Greatness from Creative Beginnings, Powering Global Brands 
             </h1>
             <p className="text-base md:text-lg text-left">
-              Accelra is a private equity and credit firm for the creative industries. We turn culture and lifestyle into world-class brands across Africa and Europe.
-            </p>
+              Accelra is a private equity and credit firm investing in the creative sectors. We deploy capital and strategic support to transform culture, lifestyle, and talent into world-class brands that shape Africa and Europe’s future.</p>
           </div>
 
           <div className="flex justify-start gap-4">
